@@ -269,4 +269,12 @@ def nine(string1, string2):
 	# Think about nesting for loops.
 
 def ten(X,Y):
-	return []
+	final = []
+	inner = []
+	for i in range(Y):
+		for j in range(X):
+			inner.append(i*j)
+		final.append(inner)
+		inner = []
+	return final
+
