@@ -108,7 +108,11 @@ def three(a):
 	# How would you seperate a string into characters?
 
 def four(input1, input2):
-	return ""
+	new = []
+	for i in range(len(input1)):
+		new.append(input1[i])
+		new.append(input2[i])
+	return "".join(new)
 
 	# <QUESTION 5>
 
