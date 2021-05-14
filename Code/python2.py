@@ -179,7 +179,12 @@ def six(input_):
 	# Use the cli to access the documentation help(list.sort)
 
 def seven(a, b, c):
-	return False
+	numbers = [a,b,c]
+	numbers.sort()
+	if numbers[2] - numbers[1] == numbers[1] - numbers[0]:
+		return True
+	else:
+		return False
 
 	# <QUESTION 8>
 
