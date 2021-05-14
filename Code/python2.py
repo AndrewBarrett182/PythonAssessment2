@@ -237,7 +237,21 @@ def eight(input_,  a):
 	# There are no hints for this question.
 
 def nine(string1, string2):
-    return False
+	char1 = list(string1)
+	char2 = list(string2)
+	if len(char1) > len(char2):
+		for i in range(len(char2)):
+			if char2[i] in char1:
+				char1.remove(char2[i])
+			else:
+				return False
+	else:
+		for i in range(len(char1)):
+			if char1[i] in char2:
+				char2.remove(char1[i])
+			else:
+				return False
+	return True
 
 	# <QUESTION 10>
 
