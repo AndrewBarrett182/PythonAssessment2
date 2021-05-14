@@ -1,7 +1,7 @@
 import pytest
-import sys
-import os
-sys.path.append(os.path.abspath("/Users/Andre/OneDrive/Desktop/Work/QA/PythonAssessment2"))
+# import sys
+# import os
+# sys.path.append(os.path.abspath("/Users/Andre/OneDrive/Desktop/Work/QA/PythonAssessment2"))
 from Code import python2
 
 def test_one():
