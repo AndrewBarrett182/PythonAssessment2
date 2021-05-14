@@ -129,7 +129,13 @@ def four(input1, input2):
 	# The random module contains a function called randint.
 
 def five():
-    return []
+	import random
+	numbers = []
+	while len(numbers) < 5:
+		number = random.randint(100,200)
+		if number % 2 == 0:
+			numbers.append(number)
+	return numbers
 
 	# <QUESTION 6>
 
