@@ -201,8 +201,26 @@ def seven(a, b, c):
 	# <HINT>
     # Use the cli to access the documentation help(str.replace)
 
-def eight(input,  a):
-	return ""
+def eight(input_,  a):
+	new = list(input_)
+	if len(input_) % 2 == 0:
+		middle = int(len(input_) / 2)
+		for i in range(1, a - 1):
+			if "".join(new) == '':
+				break
+			else:
+				new[middle-i] = ""
+				new[middle+i-1] = ""
+	else:
+		middle = int(len(input_) / 2)
+		new[middle] = ""
+		for i in range(a - 1):
+			if "".join(new) == '':
+				break
+			else:
+				new[middle-i] = ""
+				new[middle+i] = ""
+	return "".join(new)
 
 	# <QUESTION 9>
 
