@@ -153,8 +153,9 @@ def five():
 	# <HINT>
 	# There are no hints for this question.
     
-def six(input):
-	return False
+def six(input_):
+	result = input_.lower().endswith('py')
+	return result
 
 	# <QUESTION 7>
 
