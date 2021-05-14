@@ -52,8 +52,14 @@ def one(input_):
 	# What operator will give you the remainder?
 	# Use your CLI to access the Python documentation and get help manipulating strings - help(range).
 
-def two(input):
-    return False
+def two(input_):
+	for i in range(1, input_):
+		if input_ % i == 0:
+			if i == 1 or i == input_:
+				pass
+			else:
+				return False
+	return True
 
 	# <QUESTION 3>
 
