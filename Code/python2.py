@@ -29,8 +29,13 @@
 	# <HINT>
 	# How does a for loop iterate through a string?
 
-def one(input):
-	return ""
+def one(input_):
+	new = []
+	for i in input_:
+		new.append(i)
+		new.append(i)
+		new.append(i)
+	return "".join(new)
 
 	# <QUESTION 2>
 
